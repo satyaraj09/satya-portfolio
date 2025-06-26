@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import EducationCard from "@/components/EducationCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import ProjectCard from "@/components/ProjectCard";
+import ServicesCard from "@/components/ServicesCard";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="text-center md:text-left space-y-10 z-50 md:z-0">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
             Hello <br />
-            I'm <span className="text-[#00CAFF]">Satya</span>
+            I&apos;m <span className="text-[#00CAFF]">Satya</span>
             <br />
             <span className="text-gray-400">a Software Developer</span>
           </h1>
@@ -61,6 +62,11 @@ export default function Home() {
 
       <section className="min-h-screen px-6 py-10" id="services">
         <h1 className="text-5xl font-semibold text-center mb-10">Services</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <ServicesCard />
+          <ServicesCard />
+          <ServicesCard />
+        </div>
       </section>
 
       <section className="min-h-screen px-6 py-10" id="contacts">
