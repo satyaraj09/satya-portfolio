@@ -8,7 +8,7 @@ const ServicesCard = () => {
   };
   return (
     <div>
-      <div>ServicesCard</div>
+      <div>{services.title}</div>
     </div>
   );
 };
